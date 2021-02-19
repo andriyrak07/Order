@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body >
+    <div class="block">
+        <h1>Вітаємо, виберіть піцу:</h1><br/>
+
+    
+            <input class="pizza" type="checkbox" data-cost="70">Маленька (70 грн)<br/>
+            <input class="pizza" type="checkbox" data-cost="100">Середня (100 грн)<br/>
+            <input class="pizza" type="checkbox" data-cost="120">Велика (120 грн)<br/>
+        
+        
+        <h2>Виберіть інгредієнти до піци</h2>
+
+        
+            <input class="pizza" type="checkbox" data-cost="11">Гриби (11 грн)<br/>
+            <input class="pizza" type="checkbox" data-cost="12">Бекон (12 грн)<br/>
+            <input class="pizza" type="checkbox" data-cost="10">Помідор (10 грн)<br/>
+            <input class="pizza" type="checkbox" data-cost="6">Сир (6 грн)<br/>
+            <input class="pizza" type="checkbox" data-cost="15">Оливки (15 грн)<br/>
+        
+
+        <h2>Інформація про замовника</h2>
+    
+        <form>
+            
+            Ім'я <input type="text" name="name" 
+                data-val="\S"
+                data-val-msg="Введіть значення"
+                data-val-msg-id="name">
+                <span id="name"></span><br/>
+            Телефон <input type="text" placeholder="0XXXXXXXXX"
+                data-val="[0-9]{10}"
+                data-val-msg="Введіть значення"
+                data-val-msg-id="phone">
+                <span id="phone"></span><br/>
+            Адрес <input type="text" 
+                data-val="\S"
+                data-val-msg="Введіть значення"
+                data-val-msg-id="place">
+            <span id="place"></span><br/>
+            
+            <input class="sub" type="submit" value="Замовити">
+
+            <p class="cost">До сплати: <span id="price">0</span> грн</p>
+    
+        </form>
+    </div>
+</body>
+</html>

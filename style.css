@@ -1,0 +1,33 @@
+.error{
+    background-color: rgb(255, 107, 107);
+}
+.true {
+    background-color: rgb(104, 207, 104);
+}
+body {
+    background-color: black;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.block {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(115, 247, 203);
+    padding: 10px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.sub{
+    margin-top: 20px;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+}
+.cost {
+    font-size: 22px;
+    float: right;
+}
